@@ -1,0 +1,20 @@
+dept repay
+#include <stdio.h>
+
+int main() {
+    int principal, rate, time;
+    float interest, totalAmount, discount, finalAmount;
+    scanf("%d", &principal);
+    scanf("%d", &rate);
+    scanf("%d", &time);
+    interest = (principal * rate * time) / 100.0; 
+    totalAmount = principal + interest;   
+    discount = 0.02 * interest;
+    finalAmount = totalAmount - discount;   
+    printf("%.2f\n", interest);
+    printf("%.2f\n", totalAmount);
+    printf("%.2f\n", discount);
+    printf("%.2f\n", finalAmount);
+
+    return 0;
+}
