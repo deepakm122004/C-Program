@@ -1,22 +1,18 @@
-Decimal Formatting
-#include<stdio.h>
-#include<string.h>
-#include<math.h>
-#include<stdlib.h>
+Area and Perimeter of Triangle
+#include <stdio.h>
 
 int main() {
-    float a;
-    scanf("%f",&a);
-    printf("%.5f\n",a);
-    printf("%.4f\n",a);
-    printf("%.3f\n",a);
-    printf("%.2f\n",a);
-    printf("%.1f\n",a);
-   
-    printf("%d\n",(int)a);
+    int base, height;
+    int side1, side2, side3;
+    scanf("%d", &base);
+    scanf("%d", &height);
+    scanf("%d", &side1);
+    scanf("%d", &side2);
+    scanf("%d", &side3);
+    float area = 0.5 * base * height;
+    float perimeter = side1 + side2 + side3;
+    printf("Area of Triangle is %.2f\n", area);
+    printf("Perimeter of Triangle is %.2f\n", perimeter);
+    
     return 0;
 }
-
- 
-    
-
