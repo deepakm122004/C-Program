@@ -1,0 +1,30 @@
+Wall Painting
+  #include <stdio.h>
+int canFit(int L, int B, int l1, int b1, int l2, int b2) {
+        if ((l1 + l2 <= L && b1 <= B && b2 <= B) || (b1 + b2 <= B && l1 <= L && l2 <= L))
+        return 1;
+       if ((b1 + b2 <= B && l1 <= L && l2 <= L) || (l1 + l2 <= L && b1 <= B && b2 <= B))
+        return 1;
+    return 0;
+}
+
+int main() {
+    int L, B;
+    int l1, b1;
+    int l2, b2;
+    scanf("%d %d", &L, &B);
+    scanf("%d %d", &l1, &b1);
+    scanf("%d %d", &l2, &b2);
+    if (
+        canFit(L, B, l1, b1, l2, b2) ||
+        canFit(L, B, b1, l1, l2, b2) ||
+        canFit(L, B, l1, b1, b2, l2) ||
+        canFit(L, B, b1, l1, b2, l2)
+    ) {
+        printf("Raj can fix both painting\n");
+    } else {
+        printf("Raj cannot fix both painting\n");
+    }
+
+    return 0;
+}
