@@ -1,0 +1,15 @@
+Calculating Gain Percentage
+#include <stdio.h>
+
+int main() {
+    float price, repair, selling, cost_price, gain_percent;
+    scanf("%f", &price);
+    scanf("%f", &repair);
+    scanf("%f", &selling);
+    cost_price = price + repair;
+
+    gain_percent = ((selling - cost_price) / cost_price) * 100;
+    printf("%.2f\n", gain_percent);
+
+    return 0;
+}
