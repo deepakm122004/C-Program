@@ -1,4 +1,4 @@
-Weekday Name from Number 1
+Weekday Name from Number 1 
 #include <stdio.h>
 
 int main() {
