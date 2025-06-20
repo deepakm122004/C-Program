@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+    int n, target;
+    scanf("%d", &n);  
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d", &target);
+
+    int sum = 0, count = 0;
+
+    printf("The Target values are");
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > target) {
+            printf(" %d", arr[i]);
+            sum += arr[i];
+            count++;
+        }
+    }
+
+    if (count > 0) {
+        float average = (float)sum / count;
+        printf("\nsum of value is %d\n", sum);
+        printf("Average of the value is %.1f\n", average);
+    } else {
+        printf("\nNo values greater than the target.\n");
+    }
+
+    return 0;
+}
+#include <stdio.h>
+
+int main() {
+    int n, target;
+    scanf("%d", &n);  
+
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    scanf("%d", &target);
+
+    int sum = 0, count = 0;
+
+    printf("The Target values are");
+    for (int i = 0; i < n; i++) {
+        if (arr[i] > target) {
+            printf(" %d", arr[i]);
+            sum += arr[i];
+            count++;
+        }
+    }
+
+    if (count > 0) {
+        float average = (float)sum / count;
+        printf("\nsum of value is %d\n", sum);
+        printf("Average of the value is %.1f\n", average);
+    } else {
+        printf("\nNo values greater than the target.\n");
+    }
+
+    return 0;
+}
